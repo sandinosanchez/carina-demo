@@ -1,28 +1,32 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite verbose="1" name="Carina Demo Tests - Tags Sample" skipfailedinvocationcounts="false" junit="false" parallel="tests" annotations="JDK">
+<suite verbose="1" name="XLS DataProvider Test With Retry (33% pass rate)" parallel="methods">
 
 	<listeners>
 		<listener class-name="com.qaprosoft.zafira.listener.ZafiraListener"/>
 	</listeners>
 
-	<parameter name="suiteOwner" value="qpsdemoSuite"/>
+	<parameter name="suiteOwner" value="qpsdemo"/>
 	<parameter name="zafira_project" value="UNKNOWN"/>
-	<parameter name="jenkinsJobName" value="Tags-Demo-Test"/>
+	<parameter name="jenkinsJobName" value="API-XlsDataProvider-Retry"/>
 	<parameter name="jenkinsJobType" value="api"/>
 	<parameter name="jenkinsEnvironments" value="DEMO"/>
 	<parameter name="jenkinsEmail" value="demo@qaprosoft.com"/>
 
 	<parameter name="jenkinsRegressionPipeline" value="nightly_regression, full_regression"/>
+	<parameter name="jenkinsRegressionMatrix_full_regression" value="retry_count:0; retry_count:3"/>
+	
 	<parameter name="jenkinsPipelineEnvironments" value="DEMO"/>
 	<parameter name="jenkinsJobExecutionMode" value="continue"/>
 
-	<parameter name="suitePriority" value="P6"/>
+	<!-- example declaring non default retry_count -->
+	<parameter name="jenkinsDefaultRetryCount" value="3"/>
 
-	<test name="Tags tests">
+
+	<test name="XLS DataProvider with Retry">
 		<classes>
-			<class name="com.qaprosoft.carina.demo.TagManagerTest" />
+			<class name="com.qaprosoft.carina.demo.regression.dataprovider.XlsDataproviderRetryTest" />
 		</classes>
 	</test>
-	
+
 </suite>
