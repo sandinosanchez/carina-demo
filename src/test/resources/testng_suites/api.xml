@@ -6,7 +6,7 @@
 		<listener class-name="com.qaprosoft.zafira.listener.ZafiraListener"/>
 	</listeners>
 	
-	<parameter name="orgRepoScheduling" value="true"/>
+	<parameter name="org-repo-scheduling" value="true"/>
 	
 	<parameter name="suiteOwner" value="qpsdemo"/>
 	<parameter name="zafira_project" value="UNKNOWN"/>
