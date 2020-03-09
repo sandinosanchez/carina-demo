@@ -14,7 +14,7 @@
 	<!-- Example howto override default job thread_count via jobDSL parameter -->
 	<parameter name="jenkinsDefaultThreadCount" value="3"/>
 
-	<parameter name="jenkinsEnvironments" value="PROD,STAG"/>
+	<!-- <parameter name="jenkinsEnvironments" value="PROD,STAG"/> -->
 	<parameter name="jenkinsSlackChannels" value="slack-test"/>
 	
 	<parameter name="jenkinsRegressionPipeline" value="nightly_regression, full_regression"/>
