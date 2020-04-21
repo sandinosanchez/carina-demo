@@ -1,7 +1,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite verbose="1" name="Carina Demo Tests - Web Sample" skipfailedinvocationcounts="false" junit="false" parallel="methods" annotations="JDK" data-provider-thread-count="2" thread-count="3">
+<suite verbose="1" name="Carina Demo Tests - Web Sample" skipfailedinvocationcounts="false" junit="false" parallel="methods" annotations="JDK" dataproviderthreadcount="10">
 
   <listeners>
 		<listener class-name="com.qaprosoft.zafira.listener.ZafiraListener"/>
