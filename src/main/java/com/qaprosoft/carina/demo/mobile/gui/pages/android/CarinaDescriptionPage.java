@@ -30,6 +30,8 @@ public class CarinaDescriptionPage extends CarinaDescriptionPageBase {
 
     @FindBy(className = "android.widget.ImageButton")
     private ExtendedWebElement leftMenuButton;
+    
+    private String unUsedVar;
 
     public CarinaDescriptionPage(WebDriver driver) {
         super(driver);
