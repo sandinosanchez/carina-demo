@@ -37,7 +37,7 @@ public class FooterMenu extends AbstractUIObject {
     
     private String str;
     
-    private Integer int;
+    private Integer i;
     
     public FooterMenu(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
