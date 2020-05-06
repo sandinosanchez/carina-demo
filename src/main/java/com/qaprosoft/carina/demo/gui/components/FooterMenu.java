@@ -35,6 +35,10 @@ public class FooterMenu extends AbstractUIObject {
     @FindBy(linkText = "News")
     private ExtendedWebElement newsLink;
     
+    private String str;
+    
+    private Integer int;
+    
     public FooterMenu(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
