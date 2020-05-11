@@ -29,6 +29,8 @@ import com.qaprosoft.carina.demo.gui.components.WeValuePrivacyAd;
 public class HomePage extends AbstractPage {
     Logger LOGGER = Logger.getLogger(HomePage.class);
     
+    private String str;
+    
     @FindBy(id = "footmenu")
     private FooterMenu footerMenu;
 
@@ -60,5 +62,11 @@ public class HomePage extends AbstractPage {
     
     public WeValuePrivacyAd getWeValuePrivacyAd() {
     	return new WeValuePrivacyAd(driver);
+    }
+    
+    public void test() {
+        for (int i=0; i<10; i++) {
+            System.out.println(i);
+        }
     }
 }
