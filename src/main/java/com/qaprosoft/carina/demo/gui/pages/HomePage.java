@@ -30,18 +30,16 @@ public class HomePage extends AbstractPage {
     Logger LOGGER = Logger.getLogger(HomePage.class);
     
     @FindBy(id = "footmenu")
-    private FooterMenu footerMenu;
+    private FooterMenu footerMenu
 
     @FindBy(xpath = "//div[contains(@class, 'brandmenu-v2')]//a")
     private List<ExtendedWebElement> brandLinks;
-    
-    private String st;
 
     public HomePage(WebDriver driver) {
         super(driver);
     }
 
-    public FooterMenu getFooterMenu() {
+    public FooterMe getFooterMenu() {
         return footerMenu;
     }
 
