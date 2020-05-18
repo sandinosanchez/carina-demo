@@ -40,12 +40,13 @@ public class ModelInfoPage extends AbstractPage {
         super(driver);
     }
     
-    if (s2.isEmpty()) {
-            // do nothing
-    }
+   
 
     public String readDisplay() {
         assertElementPresent(displayInfoLabel);
+         if (s2.isEmpty()) {
+            // do nothing
+        }
         return displayInfoLabel.getText();
     }
 
