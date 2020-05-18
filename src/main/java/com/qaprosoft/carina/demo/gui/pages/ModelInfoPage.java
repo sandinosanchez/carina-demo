@@ -24,6 +24,8 @@ import com.qaprosoft.carina.core.gui.AbstractPage;
 public class ModelInfoPage extends AbstractPage {
     @FindBy(css = ".help-display strong")
     private ExtendedWebElement displayInfoLabel;
+    
+    private static final String s2 = null;
 
     @FindBy(css = ".help-camera strong")
     private ExtendedWebElement cameraInfoLabel;
@@ -36,6 +38,10 @@ public class ModelInfoPage extends AbstractPage {
 
     public ModelInfoPage(WebDriver driver) {
         super(driver);
+    }
+    
+    if (s2.isEmpty()) {
+            // do nothing
     }
 
     public String readDisplay() {
