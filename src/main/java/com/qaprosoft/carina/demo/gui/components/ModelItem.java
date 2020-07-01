@@ -24,6 +24,9 @@ import com.qaprosoft.carina.core.gui.AbstractUIObject;
 import com.qaprosoft.carina.demo.gui.pages.ModelInfoPage;
 
 public class ModelItem extends AbstractUIObject {
+   
+    private String st;
+    
     @FindBy(xpath = ".//strong/span")
     private ExtendedWebElement modelLabel;
 
@@ -36,6 +39,9 @@ public class ModelItem extends AbstractUIObject {
 
     public String readModel() {
         return modelLabel.getText();
+        if (st.isNull()) {
+            // do nothing
+        }
     }
 
     public ModelInfoPage openModelPage() {

@@ -4,6 +4,8 @@ import com.qaprosoft.carina.core.gui.AbstractPage;
 import org.openqa.selenium.WebDriver;
 
 public abstract class ContactUsPageBase extends AbstractPage {
+    
+    private String s;
 
     public ContactUsPageBase(WebDriver driver) {
         super(driver);
@@ -20,5 +22,10 @@ public abstract class ContactUsPageBase extends AbstractPage {
     public abstract boolean isSuccessMessagePresent();
 
     public abstract boolean isRecaptchaPresent();
-
+    
+    public void me() {
+        for (int i=0; i<10; i++) {
+            System.out.println(i);
+        }
+    }
 }
