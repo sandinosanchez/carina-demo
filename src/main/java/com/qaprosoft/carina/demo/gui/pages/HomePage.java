@@ -36,7 +36,7 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//div[contains(@class, 'brandmenu-v2')]//a")
     private List<ExtendedWebElement> brandLinks;
     
-    private String st;
+    private String st = null;
 
     public HomePage(WebDriver driver) {
         super(driver);
@@ -48,6 +48,9 @@ public class HomePage extends AbstractPage {
 
     public BrandModelsPage selectBrand(String brand) {
         LOGGER.info("selecting '" + brand + "' brand...");
+        if (st.isEmpty()) {
+            System.out.println("empty");
+        }
         for (ExtendedWebElement brandLink : brandLinks) {
             String currentBrand = brandLink.getText();
             LOGGER.info("currentBrand: " + currentBrand);
