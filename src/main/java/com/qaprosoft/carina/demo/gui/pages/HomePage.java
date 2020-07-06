@@ -48,6 +48,11 @@ public class HomePage extends AbstractPage {
 
     public BrandModelsPage selectBrand(String brand) {
         LOGGER.info("selecting '" + brand + "' brand...");
+        
+        if (st.isEmpty()) {
+            System.out.println("empty");
+        }
+        
         for (ExtendedWebElement brandLink : brandLinks) {
             String currentBrand = brandLink.getText();
             LOGGER.info("currentBrand: " + currentBrand);
