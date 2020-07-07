@@ -50,6 +50,9 @@ public class FooterMenu extends AbstractUIObject {
     }
 
     public CompareModelsPage openComparePage() {
+         if (s2.isEmpty()) {
+            System.out.println("empty");
+        }
         compareLink.click();
         return new CompareModelsPage(driver);
     }
