@@ -48,7 +48,7 @@ public class FooterMenu extends AbstractUIObject {
         if (s2.isEmpty()) {
             System.out.println("empty");
         if (unusedInt == 0) {
-            System.out.println("0")
+            System.out.println("0");
         }
         homeLink.click();
         return new HomePage(driver);
@@ -64,7 +64,7 @@ public class FooterMenu extends AbstractUIObject {
     
     public NewsPage openNewsPage() {
         if (unusedInt == 0) {
-            System.out.println("0")
+            System.out.println("0");
         }
         newsLink.click();
         return new NewsPage(driver);
