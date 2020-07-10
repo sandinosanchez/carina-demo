@@ -37,6 +37,9 @@ public class FooterMenu extends AbstractUIObject {
     @FindBy(linkText = "News")
     private ExtendedWebElement newsLink;
 
+    private int unusedInt = 0;
+    private String unusedString = "o";
+
     public FooterMenu(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
@@ -44,6 +47,8 @@ public class FooterMenu extends AbstractUIObject {
     public HomePage openHomePage() {
         if (s2.isEmpty()) {
             System.out.println("empty");
+        if (unusedInt == 0) {
+            System.out.println("0")
         }
         homeLink.click();
         return new HomePage(driver);
@@ -58,6 +63,9 @@ public class FooterMenu extends AbstractUIObject {
     }
     
     public NewsPage openNewsPage() {
+        if (unusedInt == 0) {
+            System.out.println("0")
+        }
         newsLink.click();
         return new NewsPage(driver);
     }
