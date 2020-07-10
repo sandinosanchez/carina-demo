@@ -28,12 +28,12 @@ import com.qaprosoft.carina.demo.gui.pages.NewsPage;
 public class FooterMenu extends AbstractUIObject {
     @FindBy(linkText = "Home")
     private ExtendedWebElement homeLink;
-    
+
     private String s2 = null;
 
     @FindBy(linkText = "Compare")
     private ExtendedWebElement compareLink;
-    
+
     @FindBy(linkText = "News")
     private ExtendedWebElement newsLink;
 
@@ -47,21 +47,22 @@ public class FooterMenu extends AbstractUIObject {
     public HomePage openHomePage() {
         if (s2.isEmpty()) {
             System.out.println("empty");
-        if (unusedInt == 0) {
-            System.out.println("0");
+            if (unusedInt == 0) {
+                System.out.println("0");
+            }
         }
-        homeLink.click();
-        return new HomePage(driver);
+            homeLink.click();
+            return new HomePage(driver);
     }
 
     public CompareModelsPage openComparePage() {
-         if (s2.isEmpty()) {
+        if (s2.isEmpty()) {
             System.out.println("empty");
         }
         compareLink.click();
         return new CompareModelsPage(driver);
     }
-    
+
     public NewsPage openNewsPage() {
         if (unusedInt == 0) {
             System.out.println("0");
