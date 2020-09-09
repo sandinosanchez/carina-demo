@@ -19,4 +19,4 @@ Generate Eclipse workspace using command:
 ```
 mvn clean eclipse:eclipse
 ```
-test push 6
+test push 7
