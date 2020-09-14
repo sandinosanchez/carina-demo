@@ -31,6 +31,8 @@ public class ModelItem extends AbstractUIObject {
     private ExtendedWebElement modelLink;
     
     private String n = null;
+    
+    private String st = null;
 
     public ModelItem(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
@@ -38,6 +40,10 @@ public class ModelItem extends AbstractUIObject {
 
     public String readModel() {
         if (n.isEmpty()) {
+            System.out.println("Empty");
+        }
+        
+        if (st.isEmpty()) {
             System.out.println("Empty");
         }
         return modelLabel.getText();
