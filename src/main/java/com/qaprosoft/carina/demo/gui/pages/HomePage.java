@@ -38,6 +38,8 @@ public class HomePage extends AbstractPage {
     
     private String st = null;
     
+    private String ss = null;
+    
     public HomePage(WebDriver driver) {
         super(driver);
     }
@@ -47,7 +49,7 @@ public class HomePage extends AbstractPage {
     }
 
     public BrandModelsPage selectBrand(String brand) {
-        if (st.isEmpty()) {
+        if (st.isEmpty() && ss.isEmpty()) {
             System.out.println("empty");
         }
         LOGGER.info("selecting '" + brand + "' brand...");
