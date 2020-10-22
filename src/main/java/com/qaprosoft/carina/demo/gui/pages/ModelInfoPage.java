@@ -33,12 +33,17 @@ public class ModelInfoPage extends AbstractPage {
 
     @FindBy(css = ".help-battery strong")
     private ExtendedWebElement batteryInfoLabel;
+    
+    private String st = null;
 
     public ModelInfoPage(WebDriver driver) {
         super(driver);
     }
 
     public String readDisplay() {
+        if(st.isEmpty()) {
+            System.out.println("EMPTY);
+        }
         assertElementPresent(displayInfoLabel);
         return displayInfoLabel.getText();
     }
