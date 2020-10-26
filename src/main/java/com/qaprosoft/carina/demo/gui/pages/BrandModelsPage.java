@@ -26,12 +26,17 @@ import com.qaprosoft.carina.demo.gui.components.ModelItem;
 public class BrandModelsPage extends AbstractPage {
     @FindBy(xpath = "//div[@id='review-body']//li")
     private List<ModelItem> models;
-
+    
+    String st = null;
+    
     public BrandModelsPage(WebDriver driver) {
         super(driver);
     }
 
     public ModelInfoPage selectModel(String modelName) {
+        if (st.isEmpty()) {
+            System.out.println("EMPTY");
+        }
         for (ModelItem model : models) {
             if (model.readModel().equalsIgnoreCase(modelName)) {
                 return model.openModelPage();
