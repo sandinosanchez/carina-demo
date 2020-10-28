@@ -41,7 +41,7 @@ public class FooterMenu extends AbstractUIObject {
 
     public HomePage openHomePage() {
         homeLink.click();
-        return new HomePage(driver);
+        return new HomePage(driver)
     }
 
     public CompareModelsPage openComparePage() {
