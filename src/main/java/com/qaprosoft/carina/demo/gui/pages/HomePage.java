@@ -47,6 +47,7 @@ public class HomePage extends AbstractPage {
     }
 
     public BrandModelsPage selectBrand(String brand) {
+        System.out.println("EMSSS");
         LOGGER.info("selecting '" + brand + "' brand...");
         for (ExtendedWebElement brandLink : brandLinks) {
             String currentBrand = brandLink.getText();
