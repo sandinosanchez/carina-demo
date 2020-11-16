@@ -36,7 +36,7 @@ public class HomePage extends AbstractPage {
     @FindBy(xpath = "//div[contains(@class, 'brandmenu-v2')]//a")
     private List<ExtendedWebElement> brandLinks;
     
-    private String st;
+    private String sta;
 
     public HomePage(WebDriver driver) {
         super(driver);
