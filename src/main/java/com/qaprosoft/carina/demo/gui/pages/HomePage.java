@@ -39,12 +39,15 @@ public class HomePage extends AbstractPage {
     public HomePage(WebDriver driver) {
         super(driver);
     }
+    
+    private String st;
 
     public FooterMenu getFooterMenu() {
         return footerMenu;
     }
 
     public BrandModelsPage selectBrand(String brand) {
+        System.out.println("pr-test");
         LOGGER.info("selecting '" + brand + "' brand...");
         for (ExtendedWebElement brandLink : brandLinks) {
             String currentBrand = brandLink.getText();
