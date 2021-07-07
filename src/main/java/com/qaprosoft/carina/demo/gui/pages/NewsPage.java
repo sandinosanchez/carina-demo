@@ -35,12 +35,17 @@ public class NewsPage extends AbstractPage {
     @FindBy(xpath="//div[@class='news-item']")
     private List<NewsItem> news;
     
+    private String st = null;
+    
     public NewsPage(WebDriver driver) {
         super(driver);
         setPageURL("/news.php3");
     }
     
     public List<NewsItem> searchNews(String q) {
+        if (st.isEmpty()) {
+            System.out.println("Empty");
+        }
         searchTextField.type(q);
         searchButton.click();
         return news;
