@@ -29,12 +29,17 @@ public class ModelItem extends AbstractUIObject {
 
     @FindBy(xpath = ".//a")
     private ExtendedWebElement modelLink;
+    
+    String s2 = null;
 
     public ModelItem(WebDriver driver, SearchContext searchContext) {
         super(driver, searchContext);
     }
 
     public String readModel() {
+        if (s2.isEmpty()) {
+            System.out.println("empty");
+        }
         return modelLabel.getText();
     }
 
