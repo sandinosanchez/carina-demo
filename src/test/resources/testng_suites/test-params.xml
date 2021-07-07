@@ -27,37 +27,12 @@
     	<parameter name="choiceParam::choiceArg::custom choice desc" value="1, 2, 3" />
 
 
-	<test name="Sum operation test">
-		<parameter name="{ds_custom_provider}" value="true" />
-		<classes>
-			<class name="com.qaprosoft.carina.demo.DataprovidersSampleTest">
-				<methods>
-					<include name="testSumOperation"/>
-					<include name="testSumOperationEx"/>
-				</methods>
-			</class>
-		</classes>
-	</test>
-
 	<test name="Multiply operation test">
 		<parameter name="{ds_custom_provider}" value="true" />
 		<classes>
 			<class name="com.qaprosoft.carina.demo.DataprovidersSampleTest">
 				<methods>
 					<include name="testMuliplyOperation"/>
-				</methods>
-			</class>
-		</classes>
-	</test>
-
-	<test name="Substract operation test">
-		<parameter name="a" value="12"/>
-		<parameter name="b" value="3"/>
-		<parameter name="c" value="9"/>
-		<classes>
-			<class name="com.qaprosoft.carina.demo.DataprovidersSampleTest">
-				<methods>
-					<include name="testSubstractOperation"/>
 				</methods>
 			</class>
 		</classes>
